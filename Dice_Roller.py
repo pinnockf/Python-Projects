@@ -2,7 +2,7 @@ import random
 
 def prompt():
     """" Shows prompt on screen """
-    program_info = ('Dice Rolling Program\n'
+    program_info = ('Dice Rolling Simulator\n'
                     'Author: Franklin Pinnock\n'
                     'Language: Python 3.4\n'
                     'Version: 1.0\n')
