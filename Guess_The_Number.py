@@ -81,8 +81,8 @@ hints_msg = ("\nPress the 'y' key at this point to enable hints, "
               "any other key will proceed as normal")
 print(hints_msg)
 hints_enabled = input("\nEnable Hints?: ")
-
-    
+if hints_enabled == 'y':
+    hints_enabled = True
 
 #Take input and check if its a number
 while True:
@@ -96,14 +96,15 @@ while True:
         print("That number is not within the given range. Try again ")
         continue
     if user_guess != random_number:
-        if hints_enabled == 'y' and user_guess < random_number:
-            print("Your guess was too low. Try again. :D")
-        elif hints_enabled == 'y' and user_guess > random_number:
-            print("Your guess was too high. Try again. :D")
+        if hints_enabled == True and user_guess < random_number:
+            print("Your guess was too low. Try again. XD")
+        elif hints_enabled == True and user_guess > random_number:
+            print("Your guess was too high. Try again. XD")
         else:
             print("Sorry, you guessed the wrong number. Try again.")  
         continue
-    print("Congratulations! You guessed the right number.")
+    print("\nCongratulations! You guessed the right number."
+          "\nThanks for playing. :D")
     break
 
 sys.exit()
